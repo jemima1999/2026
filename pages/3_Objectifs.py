@@ -21,7 +21,7 @@ def sauvegarder_objectifs(data):
 # -------------------------
 # Interface Streamlit
 # -------------------------
-st.subheader("🎯 Objectifs mensuels et jours spéciaux")
+st.subheader("Objectifs mensuels et jours spéciaux")
 
 # Sélection du mois
 mois = st.selectbox("Choisis le mois", 

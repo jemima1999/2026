@@ -56,7 +56,7 @@ if st.button("💾 Enregistrer ma journée"):
         "score": score
     }
     sauvegarder_routine(routine_data)
-    st.success("Journée enregistrée avec succès ✅")
+    st.success("Journée enregistrée avec succès ")
 
 # Affichage historique
 st.subheader("Historique des scores")
