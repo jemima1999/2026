@@ -1,0 +1,10 @@
+{
+    "2025-12-30": {
+        "priere_matin": true,
+        "meditation": true,
+        "preparation": false,
+        "priere_soir": false,
+        "coucher": false,
+        "score": 40
+    }
+}

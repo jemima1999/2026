@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2025-12-29",
+        "type": "d\u00e9pense",
+        "categorie": "Offrande",
+        "montant": 40.0,
+        "note": ""
+    },
+    {
+        "date": "2025-12-31",
+        "type": "d\u00e9pense",
+        "categorie": "Nourriture",
+        "montant": 150.0,
+        "note": ""
+    }
+]
