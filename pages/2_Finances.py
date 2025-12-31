@@ -47,7 +47,7 @@ st.subheader("➕ Ajouter une transaction")
 
 type_ = st.selectbox("Type", ["dépense", "revenu"])
 categorie = st.selectbox("Catégorie", CATEGORIES)
-montant = st.number_input("Montant (€)", min_value=0.0, step=10.0)
+montant = st.number_input("Montant (FCFA)", min_value=0.0, step=10.0)
 trans_date = st.date_input("Date", value=date.today())
 note = st.text_input("Note (optionnel)")
 
@@ -61,7 +61,7 @@ if st.button("💾 Enregistrer la transaction"):
         "note": note
     })
     sauvegarder_donnees(data)
-    st.success(f"{type_.capitalize()} de {montant}€ enregistrée ✅")
+    st.success(f"{type_.capitalize()} de {montant}FCFA enregistrée ✅")
 
 st.divider()
 
@@ -97,13 +97,13 @@ if not df.empty:
     reste = budget - total_depense
 
     colA, colB, colC = st.columns(3)
-    colA.metric("💸 Total dépensé", f"{total_depense:,.0f}€")
-    colB.metric("🎯 Budget", f"{budget:,.0f}€")
+    colA.metric("💸 Total dépensé", f"{total_depense:,.0f}FCFA")
+    colB.metric("🎯 Budget", f"{budget:,.0f}FCFA")
     if reste < 0:
-        colC.metric("🔴 Dépassement", f"{-reste:,.0f}€")
+        colC.metric("🔴 Dépassement", f"{-reste:,.0f}FCFA")
         st.error("⚠️ Tu es en ROUGE ce mois-ci. Ralentis 🙏")
     else:
-        colC.metric("🟢 Reste", f"{reste:,.0f}€")
+        colC.metric("🟢 Reste", f"{reste:,.0f}FCFA")
         st.success("👏 Tu es dans ton budget")
     
     st.divider()
@@ -125,7 +125,7 @@ if not df.empty:
     if not cat_depenses.empty:
         fig, ax = plt.subplots()
         cat_depenses.plot(kind="bar", ax=ax, color="tomato")
-        ax.set_ylabel("Dépenses (€)")
+        ax.set_ylabel("Dépenses (FCFA)")
         ax.set_title("Dépenses par catégorie ce mois")
         plt.xticks(rotation=45)
         st.pyplot(fig)

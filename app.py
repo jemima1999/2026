@@ -127,7 +127,7 @@ elif menu == "Score global":
     st.write(f"Objectifs atteints : {score_objectifs}% ({objectifs_faits}/{total_objectifs})")
     st.write(f"Jours de journal complétés : {score_journal}% ({jours_journal}/{total_jours_mois})")
     st.write(f"Routine quotidienne complétée : {score_routine}% ({jours_routine}/{total_jours_mois})")
-    st.write(f"Finances dans le budget : {score_finances}% (budget restant: {max(budget - total_depenses,0)}€)")
+    st.write(f"Finances dans le budget : {score_finances}% (budget restant: {max(budget - total_depenses,0)}FCFA)")
 elif menu == "Score global":
     import matplotlib.pyplot as plt
     import pandas as pd
@@ -214,5 +214,5 @@ elif menu == "Score global":
     st.write(f"Objectifs atteints : {score_objectifs}% ({objectifs_faits}/{total_objectifs})")
     st.write(f"Jours de journal complétés : {score_journal}% ({jours_journal}/{total_jours_mois})")
     st.write(f"Routine quotidienne complétée : {score_routine}% ({jours_routine}/{total_jours_mois})")
-    st.write(f"Finances dans le budget : {score_finances}% (budget restant: {max(budget - total_depenses,0)}€)")
+    st.write(f"Finances dans le budget : {score_finances}% (budget restant: {max(budget - total_depenses,0)}FCFA)")
 
